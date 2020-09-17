@@ -1,0 +1,70 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.name-photo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.name-photo__img {
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.name-photo__title {
+    width: 250px;
+    font-size: 30px;
+    align-self: center;
+}
+
+.contact__item {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.contact__item--git:before {
+    position: absolute;
+    content: "";
+
+    left: -30px;
+
+    width: 20px;
+    height: 20px;
+    background-image: url(git.svg);
+}
+
+.contact__item--telegram:before {
+    position: absolute;
+    content: "";
+
+    left: -30px;
+
+    width: 20px;
+    height: 20px;
+    background-image: url(telegram.svg);
+}
+
+.contact__link {
+    text-decoration: none;
+}
+
+.contact__link:hover {
+    color: red;
+}
