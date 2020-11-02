@@ -3,15 +3,26 @@ img {
     height: auto;
 }
 
+body {
+    padding-bottom: 30px;
+}
+
 * {
     box-sizing: border-box;
 }
 
 .container {
-    max-width: 600px;
-    min-width: 320px;
+    width: 600px;
+    min-width: 300px;
     margin: 0 auto;
     background-color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding-bottom: 0 10px;
+    }
 }
 
 .name-photo {
@@ -68,3 +79,68 @@ img {
 .contact__link:hover {
     color: red;
 }
+
+/*about*/
+
+.about {
+    font-size: 20px;
+}
+
+/*     education           */
+
+.education {
+    font-size: 20px;
+}
+
+.education  a {
+    vertical-align: top;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.education  a:hover {
+    text-decoration: underline;
+}
+
+/*     stack      */
+
+.stack h2 {
+  margin: 10px 0;
+}
+
+.stack ul {
+    padding: 0 0 0 25px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+/*     example    */
+
+.examples__title {
+    margin-bottom: 0;
+}
+
+.example table {
+    font-size: 20px;
+    width: 100%;
+}
+
+.example thead tr {
+    line-height: 45px;
+    vertical-align: center;
+}
+
+.example table td {
+    vertical-align: top;
+}
+
+.example table td a {
+    vertical-align: top;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.example table a:hover {
+    text-decoration: underline;
+}
+
