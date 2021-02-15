@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Rolling Scopes School CV - Maxim Evgrashin</title>
+    <title>CV Maxim Evgrashin</title>
 </head>
 <body>
   <main class="container">
       <section class="name-photo">
-          <h1 class="name-photo__title">Maxim Evgrashin</h1>
+          <h1 class="name-photo__title">Максим Евграшин</h1>
           <img src="avatar.jpg" width="250" alt="avatar" class="name-photo__img">
       </section>
+
       <section class="located">
           <ul class="contact__list">
-              <li class="contact__item">Located in Krasnodar, Russia</li>
+              <li class="contact__item">Проживание: Краснодар, Россия</li>
               <li class="contact__item">+7 909 454 58 62</li>
               <li class="contact__item contact__item--git">
                   <a href="http://github.com/SonKn1ght/" class="contact__link">github.com/SonKn1ght/</a>
@@ -25,35 +27,36 @@
       </section>
 
       <section class="about">
-          <h2>About me</h2>
-          <p>
-              Graduated from the Kuban State Technological University with a degree in Hydraulic Engineering.<br>
-              And worked on the construction of bridges in the Krasnodar Territory for six years as a foreman.<br>
-              I got interested in web development initially as a hobby.<br>
-              After some time, I decided to change the field of professional activity.<br>
-              And here I am))
+          <h2>Обо мне</h2>
+          <p class="about__text">
+              <span>Закончил обучение на факультете строительства и управления недвижимостью  Кубанского Государственного Технологического Университета.</span>
+              <span>После чего проработал прорабом на строительстве мостов более шести лет.</span>
+              <span>С веб-разработкой познакомился благодарю другу подкинувшему ссылку.</span>
+              <span>Началось всё как хобби. Спустя некоторое время понял, что мне очень интересна эта область, и принял решение о смене профессии.</span>
           </p>
 
       </section>
 
       <section class="education">
-          <h2>Education</h2>
+          <h2>Образование</h2>
           <p>
-              Kuban State Technological University. Specialty - hydraulic engineering. Qualification - engineer. The year of graduation is 2013.
+              <span>Кубанский Государственный Технологический Университет. Специальность - Гидротехническое строительство. Квалификация - инженер. Год выпуска - 2013.</span>
+              <span></span>
+              <span></span>
           </p>
-          <p>
-              Completed training with graduation protection: <br>
-              JavaScript. Architecture of Front-end Applications. HTML academy interactive online courses<br>
-              <a href="https://htmlacademy.ru/profile/id372351">Profile</a><br>
-              <a href="https://assets.htmlacademy.ru/certificates/intensive/169/372351.pdf?1601409981">Certificate</a>
+          <p class="education__text">
+              <span>Прошел онлайн курс от HTML academy:</span>
+              <span>JavaScript. Архитектура клиентских приложений</span>
+              <a href="https://htmlacademy.ru/profile/id372351">Профиль</a>
+              <a href="https://assets.htmlacademy.ru/certificates/intensive/169/372351.pdf?1601409981">Сертификат</a>
           </p>
 
       </section>
 
       <section class="stack">
-          <h2>Technology stack</h2>
+          <h2>Стек технологий</h2>
           <ul>
-              <li>JavaScript(ES6+)</li>
+              <li>JavaScript(ES6+), TypeScript, React</li>
               <li>HTML5, CSS3, SCSS, PostCSS</li>
               <li>Git, Github</li>
               <li>Gulp, Webpack</li>
@@ -63,60 +66,111 @@
       </section>
 
       <section class="example">
-          <h2 class="examples__title">My non-commercial projects:</h2>
+          <h2 class="examples__title">Мои некоммерческие проекты::</h2>
 
               <table>
                   <thead>
                   <tr>
-                      <th width="20%" align="left">Project</th>
-                      <th width="80%">Short description</th>
+                      <th width="20%" align="left">Проект</th>
+                      <th width="80%">Краткое описание</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
-                      <td><a href="https://sonkn1ght.github.io/Nerds/">Nerds</a></td>
-                      <td>First experience of layout. Statics. The second page is the store link in the header. Animated slider and popup on the first page.</td>
+                      <td class="example__cell">
+                          <a href="https://sonkn1ght.github.io/Nerds/" target="_blank">Nerds</a>
+                          <a href="https://github.com/SonKn1ght/Nerds" target="_blank">Код</a>
+                      </td>
+                      <td>Первый опыт верстки. Статика.
+                          Вторая страница - это ссылка на магазин в шапке.
+                          Cлайдер и всплывающее окно на первой странице.</td>
                   </tr>
                   <tr>
-                      <td><a href="https://sonkn1ght.github.io/Denim/build/">Denim</a></td>
-                      <td>Adaptive. On the second page we have applied glide.js for the product card.</td>
+                      <td class="example__cell">
+                          <a href="https://sonkn1ght.github.io/Denim/build/" target="_blank">Denim</a>
+                          <a href="https://github.com/SonKn1ght/Denim/" target="_blank">Код</a>
+                      </td>
+                      <td>Адаптивная верстка. На второй странице применен glide.js для карточек товара.</td>
                   </tr>
                   <tr>
-                      <td><a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/webdev/">Webdev</a></td>
-                      <td>Educational task RS-School.Statics.</td>
+                      <td class="example__cell">
+                          <a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/calculator/" target="_blank">Calculator</a>
+                          <a href="https://github.com/SonKn1ght/calculator/" target="_blank">Код</a>
+                      </td>
+                      <td>Учебное задание RS-School. Калькулятор должен написать каждый начинающий разработчик))</td>
                   </tr>
                   <tr>
-                      <td><a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/calculator/">Calculator</a></td>
-                      <td>Educational task RS-School. Every aspiring developer must write a calculator))</td>
-                  </tr>
-                  <tr>
-                      <td><a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/shelter/pages/main/main.html">Shelter</a></td>
-                      <td>Educational task RS-School. Adaptive. Go to the second page using the link in the header.
-                          Burger menu on both pages. Pop-up pet card. Slider on the first page.
-                          Pagination to the second.
+                      <td class="example__cell">
+                          <a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/shelter/pages/main/main.html" target="_blank">Shelter</a>
+                          <a href="https://github.com/SonKn1ght/shelter" target="_blank">Код</a>
+                      </td>
+                      <td>Учебное задание RS-School. Адаптивная верстка. Вторуая страница по ссылке в шапке.
+                          Бургерное меню на обеих страницах. Всплывающая карточка питомца. Слайдер на первой странице.
+                          Пагинация на второй.
                       </td>
                   </tr>
                   <tr>
-                      <td><a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/momentum/">Momentum</a></td>
+                      <td class="example__cell">
+                          <a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/momentum/" target="_blank">Momentum</a>
+                          <a href="https://github.com/SonKn1ght/momentum/" target="_blank">Код</a>
+                      </td>
                       <td>
-                          Educational task RS-School.
-                          Momentum is an analogue of the app of the same name in the Chrome web store.
-                          The application shows the time and username, his goal for the current day.
-                          The background image changes depending on the time of day.
+                          Учебное задание RS-School.
+                          Momentum - это аналог одноименного приложения в интернет-магазине Chrome.
+                          Приложение показывает время и логин, его цель на текущий день.
+                          Фоновое изображение меняется в зависимости от времени суток.
                       </td>
                   </tr>
                   <tr>
-                      <td><a href="https://sonkn1ght.github.io/372351-big-trip-12/public/">Big trip</a></td>
+                      <td class="example__cell">
+                          <a href="https://sonkn1ght.github.io/372351-big-trip-12/public/" target="_blank">Big trip</a>
+                          <a href="https://github.com/SonKn1ght/372351-big-trip-12" target="_blank">Код</a>
+                      </td>
                       <td>
-                          SPA. MVP. Observer. Adapter. Made in the frame of intensive HTML ACADEMY - JavaScript. Client Application Architecture
+                          SPA. MVP. Observer. Adapter. Сделано в рамках курса HTML-АКАДЕМИИ - JavaScript. Архитектура клиентских приложений.
                       </td>
                   </tr>
                   <tr>
-                      <td><a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/english-for-kids/">English for kids</a></td>
+                      <td class="example__cell">
+                          <a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/gem-puzzle/" target="_blank">Gem puzzle</a>
+                          <a href="https://github.com/SonKn1ght/gem-puzzle" target="_blank">Код</a>
+                      </td>
                       <td>
-                          Educational task RS-School.
-                          Educational app for kids.
+                          SPA. MVP. Учебное задание RS-School. Реализация классической игры в пятнашки.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="example__cell">
+                          <a href="https://rolling-scopes-school.github.io/sonkn1ght-JS2020Q3/english-for-kids/">English for kids</a>
+                          <a href="https://github.com/SonKn1ght/english-for-kids/">Код</a>
+                      </td>
+                      <td>
                           SPA. MVP. TypeScript. Routing.
+                          Учебное задание RS-School.
+                          Развивающее приложение для детей.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="example__cell">
+                          <a href="https://sonkn1ght-covid-dashboard.netlify.app/" target="_blank">Covid dashboard</a>
+                          <a href="https://github.com/SonKn1ght/covid-dashboard/tree/develop/" target="_blank">Код</a>
+                      </td>
+                      <td>
+                          SPA. React. Redux. TypeScript. Учебное задание RS-School.
+                          Приложение для отслеживания распространения COVID-19 в мире и в отдельных странах.
+                          Командная разработка совместно с <a href="https://github.com/ryabykhms/" target="_blank">Maxim Ryabykh</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="example__cell">
+                          <a href="https://epic-spell-wars.ru/" target="_blank">Epic spell wars</a>
+                          <a href="https://github.com/ai297/rs-clone/" target="_blank">Код</a>
+                      </td>
+                      <td>
+                          Сетевая многопользовательская игра Epic Spell Wars of the Battle Wizards.
+                          Учебное задание RS-School.
+                          Командная разработка. Все подробности проекта
+                          <a href="https://ansiv.medium.com/%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D0%B0%D1%8F-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F-%D0%B8%D0%B3%D1%80%D0%B0-epic-spell-wars-of-the-battle-wizards-f22c9e966427/" target="_blank">в статье</a>
                       </td>
                   </tr>
                   </tbody>
